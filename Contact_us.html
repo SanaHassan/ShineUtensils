@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shine Utensils</title>
+<style>
+body 
+{ 
+width:99%;
+height:auto;
+background-image:url("marble2.jpg");
+background-image:no-repeat;
+background-position:left top;
+background-attachment:fixed;
+font-family:Verdana,sans-serif;
+}
+ul{
+margin:0px;
+padding:0px;
+background-color:white;
+list-style-type:none;
+overflow:hidden;
+position: -webkit-sticky; /* Safari */
+  position: sticky;
+   top: 0;
+}
+li{
+float:left;
+border-right:1px solid #bbb;
+}
+li a{
+padding:14px 16px;
+color:#273746;
+display:block;
+text-align:center;
+font-family:sans-serif;
+font-style:bold;
+text-decoration:none;
+}
+li:last-child {
+    border-right: none;
+}
+li a:hover:not(.active){
+
+background-color:#27D698;
+}
+.active
+{
+font-style:bold;
+background-color:#27C5D6;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.text p{font-size:22px;
+margin:0px;}
+.footer 
+{
+    background-color:#686868;
+    padding: 15px;
+	height:100px;
+	border-radius:5px;
+	color:	#F0FFF0;
+}
+</style>
+</head>
+<body>
+<div>
+<h1 style="color: white;text-align:center;background-color:#333333;border-bottom:3px solid white;border-radius:5px;text-shadow:3px 2px
+#a3a3a3 ;">Shine Utensils</h1>
+<ul>
+<li style="color:white;font-family:sans-serif;"><a href="home.html">Home</a></li>
+<li><a href="about_us.html">About Us</a></li>
+<li><a  class ="active" href="Contact_us.html">Contact Us</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li ><a href="compo.html">Comparision</a></li>
+</ul>
+</div>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+ <input type="submit" value="Submit" >
+
+  </form>
+</div>
+
+<div class="footer">
+  <pre>
+  © 2018 Shine Utensils & Cookware.
+  </pre>
+  <p style="text-align:right;">
+  Privacy Policy 
+  Sitemap
+  Disclaimer
+  </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shine Utensils</title>
+<style>
+body 
+{ 
+width:99%;
+height:auto;
+background-image:url("marble2.jpg");
+background-image:no-repeat;
+background-position:left top;
+background-attachment:fixed;
+font-family:Verdana,sans-serif;
+}
+ul{
+margin:0px;
+padding:0px;
+background-color:white;
+list-style-type:none;
+overflow:hidden;
+position: -webkit-sticky; /* Safari */
+  position: sticky;
+   top: 0;
+}
+li{
+float:left;
+border-right:1px solid #bbb;
+}
+li a{
+padding:14px 16px;
+color:#273746;
+display:block;
+text-align:center;
+font-family:sans-serif;
+font-style:bold;
+text-decoration:none;
+}
+li:last-child {
+    border-right: none;
+}
+li a:hover:not(.active){
+
+background-color:#27D698;
+}
+.active
+{
+font-style:bold;
+background-color:#27C5D6;
+}
+
+#container
+{
+	width:99%;
+height:auto;
+background-color:	#E0E0E0;
+}
+#frm
+	{background-image:url("marble.jpg");
+	width:99%;
+height:auto;}
+
+.form{
+	  height:autopx;
+	  width:45%;
+	  background:#D8D8D8;
+	  }
+#button
+	{background-color:#ccc;
+	width:80px;
+	height:40px;
+	color:#000;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:14px;
+	border-radius:15px;
+	position:absolute;
+	left:850px;
+	top:30px;}
+
+.f-1
+	
+	{width:70%;
+	height:130px;
+	font-size:18px;
+	background-color:#f2f2f2;
+	border-radius:10px;
+	text-align:center;
+	color:#000;
+	
+	
+}
+#font
+	{font-family:"Arial Black", Gadget, sans-serif;
+	font-size:16px;
+	text-align:left;}
+	
+.heading{  
+	 padding: 50px;
+	 font-size: 15px;
+	 font-family:Verdana, Geneva, sans-serif;}
+.para{   
+	padding: 50px;}
+.styling{  
+	padding: 50px;}
+
+.a
+{
+   height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+}
+.b
+{
+    height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+     left: -31px;
+}.c
+{
+   height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+     left: -31px;
+}.d
+{
+    height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px; 
+    left: -31px;
+}.e
+{
+    height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+     left: -31px;
+}
+#area{
+	  height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+   
+}
+#area1{
+	  height: 40px;
+   width: 200px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+}
+#area2{
+	  height: 45px;
+   width: 350px;
+   border-bottom-style:groove;
+   border-radius: 10px;
+}
+#top	
+	{border-radius:10px;
+	background-color:#999;
+	font-family:"Times New Roman", Times, serif;
+	font-size:26px;
+	color:#FFF;
+	list-style: none;
+	}
+
+#msg{
+	height: 110px;
+	width: 320px;
+	left:-30px;
+}
+.footer 
+{
+    background-color:#686868;
+    padding: 15px;
+	height:100px;
+	border-radius:5px;
+	color:	#F0FFF0;
+}
+</style>
+</head>
+<body>
+<div>
+<h1 style="color: white;text-align:center;background-color:#333333;border-bottom:3px solid white;border-radius:5px;text-shadow:3px 2px
+#a3a3a3 ;">Shine Utensils</h1>
+<ul>
+<li style="color:white;font-family:sans-serif;"><a href="home.html">Home</a></li>
+<li><a href="about_us.html">About Us</a></li>
+<li><a href="Contact_us.html">Contact Us</a></li>
+<li><a class ="active"  href="feedback.html">Feedback</a></li>
+<li ><a  href="compo.html">Comparision</a></li>
+</ul>
+</div>
+
+<div id="container">
+   <div id="frm"><br>
+
+   <center><div class="form"><br>
+
+<p class="f-1"><b> Online Feedback</b></br></br>
+Please take a couple of minutes to fill-in the form below. Your feedback would greatly help us improve our web site.</p>
+
+    <form class="styling" action="demo_form.asp" method="post" id="frm1">
+
+	<p id="font">Your name</br>
+		<input  type="text"required id="area"></br><br>
+ 	E-mail</br>
+		<input  type="text"required id="area2"><br></p><br>
+
+
+   <p  id="font"> Country of residence</p><br>
+ 
+   <select class="b"><br>
+       <option> Click here</option><br>
+       <option> Karachi  </option><br>
+       <option> Lahore  </option><br>
+       <option> Islamabad  </option><br>
+       <option> Faislabad  </option><br>
+       <option> Murre </option><br>
+   </select><br>
+   <p  id="font"> Please rate the content at this site:</p><br>
+    <select  class="c">
+       <option> Click here</option><br>
+       <option> Excellent </option><br>
+       <option>Good </option><br>
+       <option> Fair   </option><br>
+       <option>Poor </option><br>
+       
+   </select>
+   <p  id="font"> Please rate the speed at which the pages load:</p><br>
+    <select class="d">
+       <option> Click here</option><br>
+       <option>Very fast  </option><br>
+       <option>Average </option><br>
+       <option> Fast  </option><br>
+       <option>Slow</option><br>
+       
+   </select>
+   <p id="font"> How organised is the site?</p><br>
+    <select class="e" >
+       <option> Click here</option><br>
+       <option> Excellent</option><br>
+       <option>Good</option><br>
+       <option>Fair </option><br>
+       <option>Poor</option><br>
+       
+   </select>
+   <p id="font"> What can we do to improve our site?</p><br>
+   <textarea id="msg"></textarea><br><br><br>
+ 
+   
+   
+   <input type="submit" value="Submit">
+   <input type="button" onClick="myFunction()" value="Reset">
+   
+   
+</form>
+</div></center>
+</div>
+</div>
+
+<div class="footer">
+  <pre>
+  © 2018 Shine Utensils & Cookware.
+  </pre>
+  <p style="text-align:right;">
+  Privacy Policy 
+  Sitemap
+  Disclaimer
+  </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shine Utensils</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<style>
+body 
+{ 
+width:99%;
+height:1000px;
+background-image:url("marble2.jpg");
+background-image:no-repeat;
+background-position:left top;
+background-attachment:fixed;
+font-family:Verdana,sans-serif;
+}
+ul{
+margin:0px;
+padding:0px;
+background-color:white;
+list-style-type:none;
+overflow:hidden;
+position: -webkit-sticky; /* Safari */
+  position: sticky;
+   top: 0;
+}
+li{
+float:left;
+border-right:1px solid #bbb;
+}
+li a{
+padding:14px 16px;
+color:#273746;
+display:block;
+text-align:center;
+font-family:sans-serif;
+font-style:bold;
+text-decoration:none;
+}
+li:last-child {
+    border-right: none;
+}
+li a:hover:not(.active){
+
+background-color:#27D698;
+}
+.active
+{
+font-style:bold;
+background-color:#27C5D6;
+}
+.Box
+{
+height:800px;
+width:96%;
+border:2px solid #27C5D6;
+margin-bottom:30px;
+margin-left:20px;
+margin-right:20px;
+margin-top:20px;
+background-color:powderBlue;
+
+
+}
+.active
+{
+font-style:bold;
+background-color:#27C5D6;
+}
+*
+{
+box-sizing:border-box;
+}
+.image-sliderfade;
+{
+display:none;
+}
+img{
+vertical-align:justify;
+}
+.container{
+max-width:1000px;
+position:relative;
+margin:auto;
+}
+.text{
+color:#f2f2f2;
+font-size:15px;
+padding:10px 15px;
+position:absolute;
+right:10px;
+bottom:10px;
+width:40%;
+background:rgba(0,0,0,0.7);
+text-align:left;
+}
+.dot{
+height:15px;
+width:15px;
+margin:0 2px;
+background-color:transparent;
+border-color:#ddd;
+border-width:5 px;
+border-style:solid;
+border-radius:50%;
+display:inline-block;
+transition:border-color 0.6s ease;
+}
+.active{
+border-color:#666;
+}
+.fade{
+-webkit-animation-name:fade-image;
+-webkit-animation-duration:1.5s;
+animation-name:fade-image;
+animation-duration:1.5s;
+}
+@-webkit-keyframes fade-image{
+from {opacity: 0.4}
+to{opacity:1}
+}
+@keyframes fade-image{
+from {opacity: 0.4}
+to{opacity:1}
+}
+@media only screen and (max-width:300px)
+{
+.text{font-size:11px}
+}
+.slide
+{
+width:95%;
+height:100px;
+background-color:#474747;
+border:2px solid white;
+border-radius:7px;
+margin-left:30px;
+}
+.footer 
+{
+    background-color:#686868;
+    padding: 15px;
+	height:200px;
+	border-radius:5px;
+	color:	#F0FFF0;
+	
+}
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
+.wrapper i {
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+  color: #dd4b39;
+}
+.wrapper a:nth-child(2) {
+  color: #4867AA;
+}
+.wrapper a:nth-child(3) {
+  color: #1DA1F2;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+.pic{
+height:300px;
+width:300px;
+border:2px solid black;
+border-radius:4px;
+margin-left:70px;
+margin-top:100px;
+background-image:url("frypan.jpg");
+}
+.bit{
+height:400px;
+width:500px;
+border:2px solid black;
+align:center;
+margin-left:400px;
+background-color:#81D8D0;
+
+
+}
+</style>
+<script>
+			var slideIndex= 0;	
+			
+			function showSlides(){
+				var i ;
+				var slides = document.getElementsByClassName("image-sliderfade");
+				var dots = document.getElementsByClassName("dot");
+				for( i =0; i < slides.length ; i++)
+				{
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if(slideIndex > slides.length)
+				{
+					slideIndex = 1;
+				}
+				for( i =0; i < dots.length ; i++)
+				{
+					dots[i].className = dots[i].className.replace(" active" ,"");
+				}	
+				slides[slideIndex -1].style.display = "block";
+				dots[slideIndex -1].className +=" active";
+				setTimeout(showSlides, 2000);
+			}
+
+
+
+		</script>
+</head>
+<body onLoad="showSlides()">
+
+<div>
+<h1 style="color: white;text-align:center;background-color:#333333;border-bottom:3px solid white;border-radius:5px;text-shadow:3px 2px
+#a3a3a3 ;">Shine Utensils</h1>
+<ul>
+<li style="color:white;font-family:sans-serif;"><a href="home.html">Home</a></li>
+<li><a href="about_us.html">About Us</a></li>
+<li><a href="Contact_us.html">Contact Us</a></li>
+<li><a href="feedback.html">Feedback</a></li>
+<li ><a class ="active"  href="compo.html">Comparision</a></li>
+</ul>
+</div>
+<div>
+<br/>
+</div>
+<div class="box">
+<div class="container">
+			<div class="image-sliderfade fade">
+			<img src="hello.jpg" style="width:100%;height:300px;align:left;" />
+			<div class="text"><p align="center"><b>UPTO 20% OFF ON SELECTED ITEMS</b></p></div>
+			</div>
+			<div class="image-sliderfade fade">
+			<img src="city.jpg" style="width:100%;height:300px;align:left;" />
+			<div class="text"><p align="center"><b>UPTO 20% OFF ON SELECTED ITEMS</b></p></div>
+			</div>
+			<div class="image-sliderfade fade">
+			<img src="glass.jpg" style="width:100%;height:300px;align:left;" />
+			<div class="text"><p align="center"><b>UPTO 20% OFF ON SELECTED ITEMS</b></p></div>
+			</div>
+		</div>
+		<div style="text-align:center">
+			<span class="dot"></span>
+			<span class="dot"></span>
+			<span class="dot"></span>
+		</div>
+<div class="Box">
+<h2><b><i><center>"Product Details"</center></i></b></h2>
+<hr>
+
+<div class="pic"><div class="bit">
+<p align="top">
+<center>
+
+<br><b>Brand: </b>ShineUtensils</br>
+</br><b>Reward Points:</b> 0</br>
+</br><b>Availability:</b>Out Of Stock</br>
+<br><b>Price<b></br>
+<br>Rs:800</br>
+<br><strike>Rs:1000</strike></br>
+<br><input type="checkBox" id="txtcheck"/>Option one is this and that </br> 
+<br><input type="checkBox" id="txtcheck1"/>Be sure to include why it's great</br>
+<input type="button" id="button" value= "Add Cart"placeholder="Add To cart">
+</center>
+</p></DIV></div>
+
+
+</div>
+
+<div class="footer">
+  <pre>
+  © 2018 Shine Utensils & Cookware.
+  </pre>
+  <p style="text-align:right;">
+  Privacy Policy 
+  Sitemap
+  Disclaimer
+  <div class="wrapper">
+   <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-google-plus"></i></a>
+   <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-facebook-square"></i></a>
+   <a target="_blank" href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
+ </div>
+  </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<table id="tbl" align="center" cellSpacing="20">
+		<tr>
+			<td id="item1"><img id="item1pic" src="C:\Users\M2\Documents\Cars\1.jpg" width="200" height="200" /><br>
+			<p>Name: <label id="item1name">Lamborghini Aventendor</label></p>
+			<p>Price: <label id="item1price">5400</label></p>
+			<p>Add to Cart: <input id="item1cart" class="check" type="checkbox"> Compare: <input id="item1com" name="compare" class="check" type="checkbox"></p>
+			<p><input class="button" type="button" Text="Shop" value="Shop"/></p></td>
+			
+			<td id="item2"><img id="item2pic" src="C:\Users\M2\Documents\Cars\2.jpg" width="200" height="200" /><br>
+			<p>Name: <label id="item2name">Ferrari F1</label></p>
+			<p>Price: <label id="item2price">7400</label></p>
+			<p>Add to Cart: <input id="item2cart" class="check" type="checkbox"> Compare: <input id="item2com" name="compare" class="check" type="checkbox"></p>
+			<p><input class="button" type="button" Text="Shop" value="Shop"/></p></td>
+			
+			<td id="item3"><img id="item3pic" src="C:\Users\M2\Documents\Cars\3.jpg" width="200" height="200" /><br>
+			<p>Name: <label id="item3name">Mclaren</label></p>
+			<p>Price: <label id="item3price">5000</label></p>
+			<p>Add to Cart: <input id="item3cart" class="check" type="checkbox"> Compare: <input id="item3com" name="compare" class="check" type="checkbox"></p>
+			<p><input class="button" type="button" Text="Shop" value="Shop"/></p></td>
+			
+			<td id="item4"><img id="item4pic" src="C:\Users\M2\Documents\Cars\4.jpg" width="200" height="200" /><br>
+			<p>Name: <label id="item4name">Lamborghini Murceilago</label></p>
+			<p>Price: <label id="item4price">10000</label></p>
+			<p>Add to Cart: <input id="item4cart" class="check" type="checkbox"> Compare: <input id="item4com" name="compare" class="check" type="checkbox"></p>
+			<p><input class="button" type="button" Text="Shop" value="Shop"/></p></td>
+		</tr>
+		<tr>
+			<td colspan="4"><input type="button" id="btncompare" value="Compare" onclick="btncompare_click()"</td>
+		</tr>
+	</table>
+	<table id="comtbl" class="abc" border="5" align="center" cellpadding="10">
+		<tr>
+			<th class="comth">Serial</th>
+			<th class="comth" id="comitem1"></th>
+			<th class="comth" id="comitem2"></th>
+		</tr>
+		<tr>
+			<td class="comptd" id="comserial1"></td>
+			<td class="comptd" id="comname1"></td>
+			<td class="comptd" id="comname2"></td>
+		</tr>
+		<tr>
+			<td class="comptd" id="comserial2"></td>
+			<td class="comptd" id="comprice1"></td>
+			<td class="comptd" id="comprice2"></td>
+		</tr>
+	</table>
+</body>
+</html>
+<script>
+	alert("das");
+	var value=0;
+	function btncompare_click()
+	{
+		value=0;
+		var name = document.getElementsByName("compare");
+		alert("button chaling..."+name.length);
+		for(var i=0;i<name.length;i++)
+		{
+			if(name[i].checked===true)
+			{
+				value++;
+				populate(i,value);
+			}
+		}
+		if(value==2)
+		{
+			document.getElementById("comtbl").className = "xyz";
+		}
+	}
+	function populate(a,v)
+	{
+		document.getElementById("comserial"+v).innerHTML = v;
+		document.getElementById("comitem"+v).innerHTML = "Item"+v;
+		document.getElementById("comname"+v).innerHTML = document.getElementById("item"+(a+1)+"name").innerHTML;
+		document.getElementById("comprice"+v).innerHTML = document.getElementById("item"+(a+1)+"price").innerHTML;
+		
+		
+	}
+</script>
+<style>
+.abc
+{
+	display: none;
+}
+.xyz
+{
+	display: content;
+}
+#btncompare
+{
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	font-family: Baskerbville;
+	border-color: red;
+	font-weight: bolder;
+	font-size: 25px;
+	height: 50px;
+	width: 150px;
+	float: right;
+	margin-bottom: 20px;
+}
+.check
+{
+	width: 15px;
+	height: 15px;
+}
+#item1, #item2, #item3, #item4
+{
+	background-color: lightgrey;
+	padding: 20px 20px 0px 20px;
+	border-radius: 4px;
+}
+.button
+{
+	width: 200px;
+	height: 40px;
+	color: Red;
+	font-size: 20px;
+	background-color: black;
+	font-weight: bolder;
+}
+#comtbl
+{
+	
+}
+</style>
